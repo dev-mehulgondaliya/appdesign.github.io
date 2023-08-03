@@ -1,0 +1,51 @@
+// header css
+.navbar{
+    @include position(absolute,0,0,unset,0,9);
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.3s;
+    background: transparent;
+
+
+    .navbar-nav .nav-link{
+        padding: 1.875rem 1.25rem;
+        color: $text-white;
+        text-transform: capitalize;
+        transition: 0.3s;
+    }
+
+}
+
+// on scroll fixed navbar
+.navbar-sticky-on .navbar-nav .nav-link:hover,
+.navbar-sticky-on .navbar-nav .nav-link.active{
+    color: $text-light-pink !important;
+}
+.navbar-sticky-on .navbar-nav .nav-link{
+    color: $text-light-gray;
+}
+.navbar .navbar-brand-sticky{
+    display: none;
+}
+.navbar-sticky-on .navbar-brand-ragular{
+    display: none;
+}
+.navbar-sticky-on .navbar-brand-sticky{
+    display: inline;
+}
+.navbar-sticky{
+    transition: none;
+}
+.navbar-sticky-transitioned{
+    transition: 0.3s;
+}
+.navbar-sticky-moved-up{
+    @include position(fixed,0,inherit,inherit,inherit,inherit);
+    background: $bg-white;
+    margin-top: -6.25rem;
+}
+.navbar-sticky-on{
+    margin-top: 0;
+    box-shadow: rgba(00,00,0,1) 0 0 20px;
+    transition: 0.3s;
+}

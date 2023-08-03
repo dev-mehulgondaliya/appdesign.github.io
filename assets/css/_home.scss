@@ -1,0 +1,74 @@
+// home css
+
+#home{
+    min-height: 900px;
+    height: 100%;
+    background: linear-gradient(#FF4153,#CD255D);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -5rem;
+
+   
+
+    .home-text h2{
+        @include text(3.938rem,$text-white,700,4.938rem,inherit);
+        padding: 1.063rem 0;
+    }
+
+    .home-text p{
+        font-size: 1rem;
+        color: $text-white;
+        padding: 1.03rem 0;
+    }
+
+    .home-download-btn{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .btn{
+            padding: 1.5rem 3rem;
+            margin-left: 1.5rem;
+            color: $text-white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:first-child{
+                margin-left: 0;
+            }
+
+            &:hover{
+                transform: translateY(-0.313rem);
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        span{
+            font-size: 1.688rem;
+            margin-right: 0.625rem;
+        }
+    }
+
+    .home-image{
+        text-align: right;
+        transform: rotate(-335deg);
+
+        img{
+            animation: float 3s linear infinite;
+        }
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
