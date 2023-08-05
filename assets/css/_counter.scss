@@ -1,0 +1,30 @@
+// counter css
+.counter-area{
+    padding: 6.875rem 0 1.875rem;
+}
+.single-counter{
+    position: relative;
+
+    span{
+        font-size: 3rem;
+        background: $bg-gradient;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &::after{
+        position: absolute;
+        content: '';
+        height: 70%;
+        width: 0.063rem;
+        background: $bg-black;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        opacity: 0.15;
+    }
+
+    &:last-child::after{
+        display: none;
+    }
+}

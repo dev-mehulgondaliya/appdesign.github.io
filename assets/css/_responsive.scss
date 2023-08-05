@@ -1,0 +1,164 @@
+@media (max-width:1030px){}
+@media (max-width:991px){
+    h1,h2{
+        font-size: 2.5rem;
+    }
+    .ipad-px-30{
+        padding: 0 1.875rem;
+    }
+
+    // header
+    .navbar{
+        padding-top: 0.625rem;
+        padding-bottom: 0.75rem;
+
+        .navbar-nav .nav-link{
+            background: $bg-white;
+            color: $text-black;
+            text-align: center;
+
+            &:hover{
+                color: $text-light-pink;
+            }
+
+        }
+    }
+
+    // home
+    #home{
+        padding-top: 7rem;
+
+        .row{
+            flex-direction: column-reverse;
+        }
+
+        .home-text{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .home-download-btn{
+            justify-content: center;
+        }
+        .home-image{
+            text-align: center;
+            margin-top: 3rem;
+
+            img{
+                max-width: 60%;
+            }
+        }
+    }
+
+    //feature
+    #feature{
+        //title
+        .title{
+            text-align: left;
+            margin-top:0 ;
+            padding-top: 100px;
+            background: linear-gradient(#9B1985,#F02287);
+            clip-path: none;
+
+            h2{
+                margin-bottom: 0.813rem;
+            }
+
+            .feature-middle{
+                h2,p{
+                    color: $text-white;
+                }
+            }
+
+            .feature-img{
+                text-align: right;
+
+                img{
+                    width: 70%;
+                }
+            }
+        }
+
+        //feature cards
+        .margin-top-up{
+            position: relative;
+
+            .single-feature{
+                background: $bg-white;
+                margin-top: 1.875rem;
+                padding: 2.5rem 2.5rem 2.438rem 3.125rem;
+                position: relative;
+                border-radius: 1.563rem;
+                box-shadow: 0 0.938rem 2.5rem 0 rgb(0 0 0 / 8%);
+                transition: all 0.2s ease-in;
+
+                &:hover{
+                    color: $text-white;
+                    background: $bg-gradient;
+                }
+            }
+
+            .feature_icon{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin-left: 3px;
+                color: $text-white;
+                font-size: 23px;
+                border-bottom-left-radius: 25px;
+                background: $bg-gradient;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    object-fit: cover;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                }
+            }
+        }
+    }
+
+
+    //pricing
+    .single-price{
+        margin-bottom: 2.5rem;
+    }
+
+
+
+}
+@media (max-width:767px){
+    .mobile-px-20{
+        padding: 0 1.25rem;
+    }
+
+    //home
+    #home{
+        padding-top: 5rem ;
+
+        .home-text h2{
+            font-size: 2.438rem;
+            line-height: 3.938rem;
+        }
+
+        .home-image{
+            text-align: center;
+            transform: rotate(0);
+            margin-top: 4rem;
+        }
+    }
+
+}
+@media (max-width:576px){
+    //home
+    #home .home-download-btn .btn{
+        padding: 1rem 2rem;
+    }
+}

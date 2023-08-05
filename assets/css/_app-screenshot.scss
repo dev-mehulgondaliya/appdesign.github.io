@@ -1,0 +1,15 @@
+// app screeneshot
+.app-screen{
+    padding-bottom: 5.313rem;
+
+    .swiper-slide{
+        width: 263px !important;
+        height: auto;
+    }
+
+    .swiper-pagination-bullet{
+        width: 0.75rem;
+        height: 0.75rem;
+        background: $bg-light-pink;
+    }
+}

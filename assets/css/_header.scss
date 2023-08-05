@@ -16,6 +16,24 @@
 
 }
 
+.navbar-toggler{
+    border: none;
+
+    .ti-menu{
+        font-size: 2rem;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        transition: 0.3s;
+
+        &:hover{
+            color: $text-white;
+        }
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
+
 // on scroll fixed navbar
 .navbar-sticky-on .navbar-nav .nav-link:hover,
 .navbar-sticky-on .navbar-nav .nav-link.active{
@@ -27,7 +45,7 @@
 .navbar .navbar-brand-sticky{
     display: none;
 }
-.navbar-sticky-on .navbar-brand-ragular{
+.navbar-sticky-on .navbar-brand-regular{
     display: none;
 }
 .navbar-sticky-on .navbar-brand-sticky{
@@ -40,7 +58,7 @@
     transition: 0.3s;
 }
 .navbar-sticky-moved-up{
-    @include position(fixed,0,inherit,inherit,inherit,inherit);
+    @include position(fixed,0,0,inherit,0,100);
     background: $bg-white;
     margin-top: -6.25rem;
 }
@@ -48,4 +66,15 @@
     margin-top: 0;
     box-shadow: rgba(00,00,0,1) 0 0 20px;
     transition: 0.3s;
+
+    .ti-menu{
+        font-size: 2rem;
+        color: transparent;
+        -webkit-text-stroke: 1px $text-light-pink;
+        transition: 0.3s;
+
+        &:hover{
+            color: $text-light-pink;
+        }
+    }
 }

@@ -24,7 +24,7 @@
 
 // BACKGROUND COLOR
 $bg-white:#ffff;
-$bg-black:#0000;
+$bg-black:#000000;
 $bg-light-pink : #ff007a;
 $bg-light-gray : #fef9fe;
 $bg-gradient : linear-gradient(to top, #ff007a 0%, rgba(142,0,116,1) 100%);
@@ -42,7 +42,7 @@ $text-light-gray : #7e8085;
 :root{
     //BACKGROUND COLOR
     --bg-white:#ffff;
-    --bg-black:#0000;
+    --bg-black:#000000;
     --bg-light-pink : #ff007a;
     --bg-light-gray : #fef9fe;
     --bg-gradient : linear-gradient(to top, #ff007a 0%, rgba(142,0,116,1) 100%);
@@ -63,6 +63,7 @@ $text-light-gray : #7e8085;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    user-select: none;
 }
 
 // =================================
@@ -85,10 +86,9 @@ $text-light-gray : #7e8085;
     z-index: $z;
 }
 
-body,
-html {
-    height: 100vh;
+html{
     width: 100vw;
+    height: 100vh;
     font-family: $primary-font;
     font-size: 1rem;
     background-color: $bg-white;
@@ -178,6 +178,9 @@ img{
 .ptb-100{
     padding: 100px 0;
 }
+.mob-pb-0{
+    padding-bottom: 0;
+}
 
 
 
@@ -191,3 +194,4 @@ img{
 @import "contact.scss";
 @import "footer.scss";
 @import "scrolltotop.scss";
+@import "responsive.scss";
